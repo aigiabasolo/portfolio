@@ -1174,12 +1174,7 @@
 				<span class="back_top"></span>
 				<div class="copyright">
 				  &copy;
-						<?php
-						$start_year = '2021';
-						$current_year = date('Y');
-						$copyright = ($current_year == $start_year) ? $start_year : $start_year.' - '.$current_year;
-						echo $copyright;
-						?>
+						<script>document.write(new Date().getFullYear())</script>
 						<span class="footer_comp">Ernesto Abasolo III</span>
 				</div>
 
